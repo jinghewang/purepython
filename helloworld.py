@@ -1,23 +1,23 @@
 __author__ = 'robin'
 
-if __name__ == "__main__":
-    print "Hello";
 
-#define a function
-def welcome():
-    print("Welcome to my python class")
-# define a function by arg
-def welcome_bylevel( name, level ):
-  print ( 'Welcome ' + name + ' to the program =)' )
-  print ( 'We will try some things out.' )
-  if level == 'pro': print ( 'Be patient, I am beginner.' )
-  print ('')
+weight = 10;
+height = 2;
+area = weight *height;
 
+print area;
 
-welcome()
-welcome_bylevel( 'Alex', 'beginner' )
-welcome_bylevel( 'Viki', 'pro' )
+radius = input('please input sth.')
+if radius >20:
+    print 'yyy'
+else:
+    print 'xxx'
 
-
-
+foo = input('insert value.')
+if foo == 1:
+    print 'foo-1'
+elif foo==2:
+    print '2'
+else:
+    print 'other'
 
