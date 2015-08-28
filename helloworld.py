@@ -1,23 +1,18 @@
+# file:func.py
+import func
+import cn.net.vive.test.osdemo
+
 __author__ = 'robin'
 
+# from import
+from func2 import max2
+print max2(2, 4)
 
-weight = 10;
-height = 2;
-area = weight *height;
+# import
+func.foo()
+print func.foo2('wjh')
+print func.sum2(2, 5)
+print func.appid
 
-print area;
-
-radius = input('please input sth.')
-if radius >20:
-    print 'yyy'
-else:
-    print 'xxx'
-
-foo = input('insert value.')
-if foo == 1:
-    print 'foo-1'
-elif foo==2:
-    print '2'
-else:
-    print 'other'
-
+result = cn.net.vive.test.osdemo.mkdir("D:\\1")
+print result
