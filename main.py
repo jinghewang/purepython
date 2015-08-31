@@ -20,5 +20,41 @@ __author__ = 'robin'
 # iftest
 from cn.net.vive.test.iftest import iftest
 # iftest()
-from cn.net.vive.test.iftest import guessnumber
-guessnumber()
+# from cn.net.vive.test.iftest import guessnumber
+# guessnumber()
+
+from cn.net.vive.test.whiletest import whiletest
+# whiletest()
+
+from cn.net.vive.test2.globaltest import *
+# maintest()
+# print '---------------------------'
+# maintest2()
+
+# from cn.net.vive.test2.functest import *
+# print varparam(1)
+# print varparam(1, 2)
+# print varparam(1, 2, 3)
+# print varparam(1, b=2, c=3)
+# print varparam(b=2, c=3, a=1)
+
+
+# from cn.net.vive.test2.mymodule import sayhay,version
+# from cn.net.vive.test2.mymodule import *
+
+
+import cn.net.vive.test2.mymodule as mymodule2
+mymodule2.sayhay("xxss")
+mymodule2.modulename()
+
+
+
+
+
+
+
+
+
+
+
+
