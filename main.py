@@ -43,9 +43,9 @@ from cn.net.vive.test2.globaltest import *
 # from cn.net.vive.test2.mymodule import *
 
 
-import cn.net.vive.test2.mymodule as mymodule2
-mymodule2.sayhay("xxss")
-mymodule2.modulename()
+# import cn.net.vive.test2.mymodule as mymodule2
+# mymodule2.sayhay("xxss")
+# print mymodule2.modulename()
 
 
 

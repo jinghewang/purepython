@@ -23,3 +23,4 @@ def modulename():
 if __name__ == "__main__":
     sayhay('wwwww')
 
+print(sayhay.__doc__)
