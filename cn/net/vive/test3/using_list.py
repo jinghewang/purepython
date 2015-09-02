@@ -4,7 +4,7 @@
 __author__ = 'robin'
 
 
-shoplist = ["apple","bear","banana"]
+shoplist = ["apple", "bear", "banana"]
 
 
 def getlen():
@@ -23,8 +23,20 @@ def sort():
     shoplist.sort()
 
 
+def append(item):
+    shoplist.append(item)
+
+
+def insert(i, x):
+    shoplist.insert(i, x)
+
+
 def getlast():
     return shoplist[getlen()-1]
+
+
+def dividing(msg='-', times=10):
+    print(msg * times)
 
 
 def listout():

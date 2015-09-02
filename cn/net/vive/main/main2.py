@@ -17,7 +17,14 @@ print('last is:',ulist.getlast())
 ulist.sort()
 ulist.listout()
 
+ulist.append("qqqq")
+ulist.listout()
 
+ulist.dividing()
+ulist.insert(1,'insert')
+ulist.listout()
+
+ulist.dividing()
 ulist.delfirst()
 print('first is:',ulist.getfirst())
 

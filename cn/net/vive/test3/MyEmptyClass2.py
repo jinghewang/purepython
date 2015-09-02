@@ -16,3 +16,6 @@ class MyEmptyClass2:
 
     def func3(self, x):
         return x * 2
+
+    def ininlog(*args):
+        pass
