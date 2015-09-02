@@ -20,3 +20,6 @@ ulist.listout()
 
 ulist.delfirst()
 print('first is:',ulist.getfirst())
+
+
+

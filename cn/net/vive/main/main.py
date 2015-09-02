@@ -1,6 +1,4 @@
 # file:func.py
-import func
-import cn.net.vive.test.osdemo
 
 __author__ = 'robin'
 
@@ -18,15 +16,12 @@ __author__ = 'robin'
 # print result
 
 # iftest
-from cn.net.vive.test.iftest import iftest
 # iftest()
 # from cn.net.vive.test.iftest import guessnumber
 # guessnumber()
 
-from cn.net.vive.test.whiletest import whiletest
 # whiletest()
 
-from cn.net.vive.test2.globaltest import *
 # maintest()
 # print '---------------------------'
 # maintest2()
