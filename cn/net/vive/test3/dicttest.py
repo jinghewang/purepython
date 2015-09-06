@@ -40,9 +40,9 @@ def varargs(name, separator, *others):
     :type name: str
     :type separator: str
     :type others: list
-    :param name:
-    :param separator:
-    :param others:
+    :param name:姓名
+    :param separator:分隔符
+    :param others:参数
     """
     print 'name:', name
     print separator.join(others)
