@@ -3,8 +3,10 @@
 
 __author__ = 'robin'
 
+appid = 'v.87'
 
 import cn.net.vive.base.helper as helper
+
 
 def test():
     # 循环遍历

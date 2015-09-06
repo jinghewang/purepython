@@ -78,7 +78,52 @@ import cn.net.vive.base.helper as helper
 # 测试2
 # d = {'volate': 'volate1', 'state': 'state1', 'action': 'action1'}
 # dicttest.parrot(**d)
+import cn.net.vive.test.rececletest as rececle
+test = rececle.test
+# test()
+# print rececle.appid
 
 
+s = 'hello world'
+print str(s),str(1.0/7.0),repr((1.0/7.0))
+print '{0}-{1}-{other}'.format(str(5).zfill(5),str(2).zfill(8),other='sssss')
+
+table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 8637678}
+print "Jack:{Jack:d} Sjoerd:{Sjoerd:d}".format(**table)
+
+import json
+print json.dumps(table)
+import os
+filename = os.getcwd() + "\\test.txt"
+
+def readfile():
+    fp = open(filename,'r')
+    # str1 = fp.readline()
+    # str2 = fp.readline()
+    lines = fp.readlines()
+    for line in lines:
+        print line
+
+    fp.close()
+
+
+def readfile2():
+    fp = open(filename,'r')
+    line = fp.readline()
+    while line:
+        print line
+        line = fp.readline()
+
+    fp.close()
+
+
+def readfile3():
+    fp = open(filename,'r')
+    line = fp.readall()
+    print line
+    fp.close()
+
+
+readfile()
 
 quit()
