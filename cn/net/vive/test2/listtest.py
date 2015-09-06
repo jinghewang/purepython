@@ -22,6 +22,10 @@ def test():
     ls2 = filter(lambda x:x>4,ls)
     helper.print2(ls2,True)
 
+     # reduce
+    ls2 = reduce(lambda x,y:x+y,ls)
+    helper.print2(ls2,True)
+
 
 def getlen():
     return len(shoplist)

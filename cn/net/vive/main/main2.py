@@ -79,12 +79,11 @@ import cn.net.vive.base.helper as helper
 # d = {'volate': 'volate1', 'state': 'state1', 'action': 'action1'}
 # dicttest.parrot(**d)
 
-
-
-quit();
-
-
 import cn.net.vive.test2.listtest as ls
+
+ls.test();
+quit()
+
 ls.clear()
 for i in range(0,10):
     ls.append(i)
