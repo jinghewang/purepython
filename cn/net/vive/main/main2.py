@@ -59,25 +59,57 @@ def f2(a, L=None):
 import cn.net.vive.test.dicttest as dicttest
 import cn.net.vive.base.helper as helper
 
-dicttest.cheeseshop('Limburger', "It's very runny, sir.",
-                    "It's really very, VERY runny, sir.",
-                    shopkeeper='Michael Palin',
-                    client="John Cleese",
-                    sketch="Cheese Shop Sketch")
+# dicttest.cheeseshop('Limburger', "It's very runny, sir.",
+#                     "It's really very, VERY runny, sir.",
+#                     shopkeeper='Michael Palin',
+#                     client="John Cleese",
+#                     sketch="Cheese Shop Sketch")
 
 
-dicttest.varargs('wjh', ',', 'hebei', 'beijing', 'shanghai')
-
-helper.dividing()
+# dicttest.varargs('wjh', ',', 'hebei', 'beijing', 'shanghai')
+# helper.dividing()
 
 # 测试1
-args = [3,6]
-dicttest.args2(*args)
+# args = [3,6]
+# dicttest.args2(*args)
 
-helper.dividing()
+# helper.dividing()
 
 # 测试2
-d = {'volate': 'volate1', 'state': 'state1', 'action': 'action1'}
-dicttest.parrot(**d)
+# d = {'volate': 'volate1', 'state': 'state1', 'action': 'action1'}
+# dicttest.parrot(**d)
 
 
+
+quit();
+
+
+import cn.net.vive.test2.listtest as ls
+ls.clear()
+for i in range(0,10):
+    ls.append(i)
+    ls.listout(True)
+
+
+while ls.getlen()>0:
+    ls.pop()
+    ls.listout(True)
+
+
+quit()
+
+# --------------------------------
+ls.listout(True)
+ls.append('wjh','lht','wjh','lvkui')
+ls.listout(True)
+print ls.count("wjh")
+ls.insert(1,'1111')
+ls.listout(True)
+ls.sort()
+ls.listout(True)
+ls.sort(lambda x,y:cmp(len(x),len(y)),key=lambda x:x+x,reverse=True)
+ls.listout(True)
+quit()
+
+
+helper.dividing()

@@ -4,7 +4,13 @@
 __author__ = 'robin'
 
 
-def dividing(msg='-', times=10):
+def print2(obj, isdivi=False):
+    if isdivi:
+        dividing()
+    print obj
+
+
+def dividing(msg='-', times=20):
     """
     输出分隔线
 
