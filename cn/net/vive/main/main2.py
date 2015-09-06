@@ -84,6 +84,4 @@ import cn.net.vive.base.helper as helper
 
 quit()
 
-quit()
-
 
