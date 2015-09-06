@@ -26,6 +26,16 @@ def test():
     ls2 = reduce(lambda x,y:x+y,ls)
     helper.print2(ls2,True)
 
+    # sum
+    sum = mysum(ls)
+    helper.print2(sum,True)
+
+
+def mysum(seq):
+    def add(x,y):
+        return x+y
+    return reduce(add,seq,0)
+
 
 def getlen():
     return len(shoplist)
