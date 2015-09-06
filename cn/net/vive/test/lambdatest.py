@@ -4,7 +4,7 @@
 __author__ = 'robin'
 
 import cn.net.vive.base.helper as helper
-import cn.net.vive.test3.dicttest as dicttest
+import cn.net.vive.test.dicttest as dicttest
 
 helper.dividing()
 

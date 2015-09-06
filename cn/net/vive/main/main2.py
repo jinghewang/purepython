@@ -51,13 +51,12 @@ def f2(a, L=None):
 # print f2(3)
 
 
-import cn.net.vive.test3.dicttest as dicttest
 # print dicttest.getdict()
 # print dicttest.getdict2()
 # print dicttest.getdict3()
 
 
-import cn.net.vive.test3.dicttest as dicttest
+import cn.net.vive.test.dicttest as dicttest
 import cn.net.vive.base.helper as helper
 
 dicttest.cheeseshop('Limburger', "It's very runny, sir.",
