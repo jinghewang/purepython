@@ -47,3 +47,29 @@ def varargs(name, separator, *others):
     print 'name:', name
     print separator.join(others)
     return 'name',name,separator.join(others)
+
+
+def args2(name,age):
+    print 'name:', name, 'age:', age
+    return True
+
+
+def parrot(volate, state='a stiff', action='voom'):
+    """
+    parrot
+
+    parrot
+    :rtype : bool
+    :type volate: str
+    :type state: str
+    :type action: str
+    :param volate: volate
+    :param state: state
+    :param action: action
+    """
+    print 'volate:', volate, ' state:', state, ' action:', action
+    return True
+
+
+def make_incrementor(n):
+    return lambda x:x+n

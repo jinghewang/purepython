@@ -58,6 +58,7 @@ import cn.net.vive.test3.dicttest as dicttest
 
 
 import cn.net.vive.test3.dicttest as dicttest
+import cn.net.vive.base.helper as helper
 
 dicttest.cheeseshop('Limburger', "It's very runny, sir.",
                     "It's really very, VERY runny, sir.",
@@ -68,5 +69,16 @@ dicttest.cheeseshop('Limburger', "It's very runny, sir.",
 
 dicttest.varargs('wjh', ',', 'hebei', 'beijing', 'shanghai')
 
-import math
-max(1,2,5)
+helper.dividing()
+
+# 测试1
+args = [3,6]
+dicttest.args2(*args)
+
+helper.dividing()
+
+# 测试2
+d = {'volate': 'volate1', 'state': 'state1', 'action': 'action1'}
+dicttest.parrot(**d)
+
+
