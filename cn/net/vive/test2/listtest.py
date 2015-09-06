@@ -27,8 +27,8 @@ def test():
     helper.print2(ls2,True)
 
     # sum
-    sum = mysum(ls)
-    helper.print2(sum,True)
+    helper.print2(mysum(ls),True)
+    helper.print2(mysum([]),True)
 
 
 def mysum(seq):
