@@ -64,3 +64,9 @@ dicttest.cheeseshop('Limburger', "It's very runny, sir.",
                     shopkeeper='Michael Palin',
                     client="John Cleese",
                     sketch="Cheese Shop Sketch")
+
+
+dicttest.varargs('wjh', ',', 'hebei', 'beijing', 'shanghai')
+
+import math
+max(1,2,5)

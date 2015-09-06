@@ -32,3 +32,18 @@ def cheeseshop(kind, *arguments, **keywords):
         print key,'=',keywords[key]
 
 
+def varargs(name, separator, *others):
+    """
+    可变参数
+
+    可变参数，包括名称，分隔符，参数
+    :type name: str
+    :type separator: str
+    :type others: list
+    :param name:
+    :param separator:
+    :param others:
+    """
+    print 'name:', name
+    print separator.join(others)
+    return 'name',name,separator.join(others)
