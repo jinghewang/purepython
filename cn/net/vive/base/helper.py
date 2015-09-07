@@ -3,6 +3,15 @@
 
 __author__ = 'robin'
 
+# import
+import os
+import json
+from time import sleep
+
+
+def getfile(name):
+    return os.getcwd() + "\\" + name
+
 
 def print2(obj, isdivi=False):
     if isdivi:
