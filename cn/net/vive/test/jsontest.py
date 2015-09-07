@@ -19,10 +19,22 @@ def test():
     # dumpfile()
 
     # 加载json
-    loadfile()
+    # loadfile()
 
     # 读取文件
     # readfile2()
+
+    # with 方式
+    testwith()
+
+
+def testwith():
+    # with 方式
+    with open(filename) as f:
+        for line in f:
+            jasonval = json.loads(line)
+            for k, v in jasonval.iteritems():
+                print "k:{0} v:{1}".format(k, v)
 
 
 def loadfile():
