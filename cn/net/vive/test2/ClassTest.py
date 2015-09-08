@@ -17,7 +17,9 @@ def test():
     student = Student()
     teacher = Teacher()
 
-    print animal.f()
+    animal2 = Animal('pig')
+
+    print animal2.list_keys()
     # teacher.hello()
-    student.readme()
+    # student.readme()
 
