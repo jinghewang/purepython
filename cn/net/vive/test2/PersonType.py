@@ -8,4 +8,7 @@ from cn.net.vive.test2.AnimalType import Animal
 
 
 class Person(Animal):
-    pass
+
+    def test(self):
+
+        pass

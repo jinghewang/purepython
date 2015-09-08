@@ -15,9 +15,16 @@ class Animal:
     name = ''
     hmsg = 'hello world'
     company = 'vive'
+    counter = 0
+    instances = []
 
     def __init__(self, name=''):
         self.name = name
+        self.instances.append(name)
+        self.tricks = []
+
+    def add_tricks(self,trick):
+        self.tricks.append(trick)
 
     def list_keys(self):
         """
