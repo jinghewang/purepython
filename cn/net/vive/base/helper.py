@@ -26,3 +26,12 @@ def dividing(msg='-', times=20):
     :rtype : str
     """
     print(msg * times)
+
+
+def dividing_with_title(title, msg='-', times=10, times2=10):
+    """
+    输出分隔线
+
+    :rtype : str
+    """
+    print msg * times + title + msg * times2

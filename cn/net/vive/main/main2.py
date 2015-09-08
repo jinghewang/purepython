@@ -3,6 +3,12 @@
 
 __author__ = 'robin'
 
+
+import cn.net.vive.test2.ClassTest as ClassTest
+ClassTest.test()
+
+quit()
+
 # dir
 # a = 5 ; b = 6 ;
 # print dir()
