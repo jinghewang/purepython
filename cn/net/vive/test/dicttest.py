@@ -3,6 +3,44 @@
 
 __author__ = 'robin'
 
+import cn.net.vive.test3.using_list as ulist
+import cn.net.vive.test.dicttest as dicttest
+import cn.net.vive.base.helper as helper
+
+
+def test():
+    # test-1
+    print ulist.getlen()
+    ulist.listout()
+    print('first is:', ulist.getfirst())
+    print('last is:', ulist.getlast())
+    ulist.sort()
+    ulist.listout()
+
+    ulist.append("qqqq")
+    ulist.listout()
+
+    ulist.dividing()
+    ulist.insert(1, 'insert')
+    ulist.listout()
+
+    ulist.dividing()
+    ulist.delfirst()
+    print('first is:', ulist.getfirst())
+
+    # test-2
+    dicttest.cheeseshop('Limburger', "It's very runny, sir.",
+                        "It's really very, VERY runny, sir.",
+                        shopkeeper='Michael Palin',
+                        client="John Cleese",
+                        sketch="Cheese Shop Sketch")
+    dicttest.varargs('wjh', ',', 'hebei', 'beijing', 'shanghai')
+    helper.dividing()
+
+    print dicttest.getdict()
+    print dicttest.getdict2()
+    print dicttest.getdict3()
+
 
 def getempty_dict():
     return dict();
