@@ -57,36 +57,18 @@ def test():
     print data.readline()
     data.close()
 
-    # thread
-    import threading, zipfile
 
-    print '--The main program continues to run in foreground.--11'
+def test_thread():
+    # thread
+    from cn.net.vive.test2.AsyncZipType import AsyncZip
+
+    print '-->The main program continues to run in foreground.'
     background = AsyncZip('test.txt', 'test.zip')
     background.start()
-    print '--The main program continues to run in foreground.--22'
 
     background.join()    # Wait for the background task to finish
-    print '--Main program waited until background was done.'
-
+    print '-->Main program waited until background was done.'
 
     # end
     helper.dividing_with_title(' end ')
-
-
-import threading, zipfile
-
-
-class AsyncZip(threading.Thread):
-    def __init__(self, infile, outfile):
-        threading.Thread.__init__(self)
-        self.infile = infile
-        self.outfile = outfile
-        print '>>>Init background zip of: ', self.infile
-
-    def run(self):
-        print '>>>Start background zip of: ', self.infile
-        f = zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED)
-        f.write(self.infile)
-        f.close()
-        print '>>>Finished background zip of: ', self.infile
 
