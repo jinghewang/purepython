@@ -120,6 +120,15 @@ def test_list():
     heappush(data,-5)
     print [heappop(data) for i in range(3)]
 
+    # decimal
+    from decimal import *
+    x = Decimal(0.70)* Decimal(1.05)
+    print x, x.quantize(Decimal('0.01')),round(.70 * 1.05, 2)
+
+    getcontext().prec = 36
+    print Decimal(1) / Decimal(7)
+
+
 
 
 
