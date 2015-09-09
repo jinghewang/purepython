@@ -72,3 +72,57 @@ def test_thread():
     # end
     helper.dividing_with_title(' end ')
 
+
+def test_weakref():
+    import weakref,gc
+    from cn.net.vive.test2.AType import A
+    a = A(10)
+    d = weakref.WeakValueDictionary()
+    d['primary'] = a
+    print d['primary']
+    del a
+    gc.collect()
+    print d['primary']
+
+
+def test_log():
+    import logging
+    logging.debug("debug")
+    logging.info("info")
+    logging.warning("warn")
+    logging.error("error")
+    logging.critical("critical")
+
+
+def test_list():
+    # array
+    from array import array
+    a = array('H',[4000,10,700,22222])
+    print sum(a)
+    print a[1:3]
+
+    # collection
+    from collections import deque
+    d = deque(['task1','task2','task3'])
+    d.append('task4')
+    print 'handing',d.popleft()
+
+    # bisect
+    import bisect
+    scores = [(100,'wjh'),(200,'lht'),(400,'lvkui')]
+    bisect.insort(scores,(300,'www'))
+    print scores
+
+    # heapq
+    from heapq import heappop,heappush,heapify
+    data = [1,3,5,7,6,2]
+    heapify(data)
+    heappush(data,-5)
+    print [heappop(data) for i in range(3)]
+
+
+
+
+
+
+
