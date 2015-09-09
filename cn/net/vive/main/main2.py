@@ -4,4 +4,9 @@
 __author__ = 'robin'
 
 
+import cn.net.vive.test.other11 as other11
+
+other11.test()
+
+
 quit()
